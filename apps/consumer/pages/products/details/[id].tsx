@@ -18,7 +18,7 @@ const DetailProduct = () => {
     </>
   );
 };
-export default dynamic(() => Promise.resolve(Detail), { ssr: true });
+export default dynamic(() => Promise.resolve(DetailProduct), { ssr: true });
 
 // export const getStaticPaths = async () => {
 //   // const res = await fetch(`https://dev-api.itaphoa.com/customer/products`);

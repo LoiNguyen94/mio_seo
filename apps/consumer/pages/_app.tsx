@@ -44,13 +44,13 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <main className="app">
-      <Head>
+      {/* <Head>
         <title>{'data?.name'}</title>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
         <meta property="og:title" content={'data?.name'} key="title" />
         <meta property="og:description" content={'data?.log_time'} />
         <meta property="og:image" content={'data?.photo'} />
-      </Head>
+      </Head> */}
         {!loading ? <AnyComponent {...pageProps} /> : <Loading />}
         <ToastContainer
           hideProgressBar
