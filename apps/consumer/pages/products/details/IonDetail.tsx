@@ -28,11 +28,11 @@ const DetailContainer = (props: DetailProps) => {
   return (
     <>
       <Head>
-        <title>{data?.name}</title>
+        <title>{'data?.name'}</title>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <meta property="og:title" content={data?.name} key="title" />
-        <meta property="og:description" content={data?.log_time} />
-        <meta property="og:image" content={data?.photo} />
+        <meta property="og:title" content={'data?.name'} key="title" />
+        <meta property="og:description" content={'data?.log_time'} />
+        <meta property="og:image" content={'data?.photo'} />
       </Head>
       <DetailComponent detail={data} />
     </>
