@@ -13,7 +13,7 @@ const DetailProduct = (props) => {
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
         <meta property="og:title" content={detail?.name} key="title" />
         <meta property="og:description" content={detail?.log_time} />
-        {/* <meta property="og:image" content={detail?.photo} /> */}
+        <meta property="og:image" content={detail?.photo} />
       </Head>
       <DetailContainer detail={detail} />
     </>
