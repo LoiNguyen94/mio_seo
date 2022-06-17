@@ -6,7 +6,7 @@ interface DetailProps {
   match?: { params: { id: any } };
   detail: undefined;
 }
-const DetailContainer = (props: DetailProps) => {
+export  const DetailContainer = (props: DetailProps) => {
   const [data, setData] = useState(props.detail);
   useEffect(() => {
     if (!data) {
