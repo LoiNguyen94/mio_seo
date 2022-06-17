@@ -1,0 +1,31 @@
+.register-form-note {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12;
+  color: #919191;
+}
+.service-privacy-note {
+  font-size: 12px;
+  margin: 0px 10px 0px 10px;
+  color: #0F172A;
+  font-weight: 400;
+  font-family: inherit;
+}
+.login-form-register {
+    color: #7C7C7C;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f5f6f9;
+  }
+  .btn-register {
+    color: #f0224f;
+    margin-left: 5px;
+  }

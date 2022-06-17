@@ -1,0 +1,17 @@
+{
+  "name": "consumer",
+  "devDependencies": {
+    "@capacitor/cli": "^3.2.5"
+  },
+  "dependencies": {
+    "@capacitor/clipboard": "*",
+    "@capacitor/device": "*",
+    "@capacitor/dialog": "*",
+    "@capacitor/geolocation": "*",
+    "@capacitor/haptics": "*",
+    "@capacitor/network": "*",
+    "@capacitor/push-notifications": "*",
+    "@capacitor/storage": "*",
+    "@capacitor/app": "*"
+  }
+}

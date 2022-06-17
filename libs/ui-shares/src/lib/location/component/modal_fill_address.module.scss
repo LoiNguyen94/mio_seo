@@ -1,0 +1,52 @@
+.input_search {
+  padding: 8px 16px 8px 16px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+.row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.frame_list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.frame_list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cont_item {
+  margin-right: 16;
+  color: #0f172a;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff0f3;
+  }
+}
+
+.cont_item_active {
+  margin-right: 16;
+  background-color: #f0d2d7;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.item {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 16px;
+  padding: 10px 0px 10px 0px;
+}
+
+.item_active {
+  font-weight: bold !important;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 16px;
+  padding: 10px 0px 10px 0px;
+}

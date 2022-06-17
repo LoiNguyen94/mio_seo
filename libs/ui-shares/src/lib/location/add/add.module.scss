@@ -1,0 +1,35 @@
+.container_item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f172a;
+  padding: 25px 16px 9px 16px;
+}
+
+.container_item_with_error {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f172a;
+  padding: 0px 16px 9px 16px;
+}
+
+.title_item {
+  padding: 9px 16px 9px 16px;
+  background-color: white;
+  cursor: pointer;
+  color: #7c7c7c;
+}
+
+.type_location_item {
+  padding: 4px 9px;
+  border-radius: 15px;
+  font-size: 14px;
+  width: fit-content;
+  font-size: 400;
+  margin-left: 10px;
+}
+
+.row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

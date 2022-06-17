@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "consumer": "apps/consumer",
+    "function-shares": "libs/function-shares",
+    "model": "libs/model",
+    "seo": "apps/seo",
+    "seo2": "apps/seo2",
+    "ui-shares": "libs/ui-shares"
+  }
+}

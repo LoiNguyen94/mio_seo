@@ -1,0 +1,57 @@
+.container {
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.container .frame {
+  background-color: #f5f6f9;
+  position: relative;
+  max-width: 500px;
+  flex: 1;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.frame::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.frame {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.content {
+  opacity: 0;
+  // background-color: cornflowerblue;
+  transition: 1s;
+  // height: calc(100vh - 4em);
+  // overflow: auto;
+  // padding: 1em;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.container_tab {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.p_12_20_0_20 {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

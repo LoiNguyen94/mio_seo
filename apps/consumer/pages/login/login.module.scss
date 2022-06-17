@@ -1,0 +1,39 @@
+.login-form-register {
+  color: #f0224f;
+  text-align: center;
+  width: 100%;
+  // margin-top: 16px;
+  background-color: #f5f6f9 ;
+}
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 80px;
+  // justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f6f9 ;
+}
+.login-form-button {
+  height: 44px;
+  border-radius: 10px;
+  background-color: #EC4261;
+  color: #FFFFFF;
+  width: 100%;
+}
+.login-form-register {
+  color: #7C7C7C;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-register {
+  color: #f0224f;
+  margin-left: 5px;
+}

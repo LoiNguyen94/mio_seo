@@ -1,0 +1,27 @@
+.modal_otp .ant-modal-content {
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px 0px 20px;
+}
+.modal_otp .ant-modal-body {
+  padding: 15px;
+}
+.mapboxgl-ctrl-logo {
+  display: none;
+}
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: #ffffff;
+  border-right-width: 0px;
+}
+
+element.style {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}

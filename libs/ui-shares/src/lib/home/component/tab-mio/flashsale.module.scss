@@ -1,0 +1,38 @@
+.p_10_13_10_13 {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.p_8_8_8_8 {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.p_0 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.row_center {
+  display: flex;
+  align-items: center;
+}
+
+.row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column_between_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: center;
+}

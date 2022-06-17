@@ -1,0 +1,24 @@
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 90px;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-forget {
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  padding-top: 16px;
+  background-color: #f5f6f9;
+  cursor: pointer;
+}
+.login-form-button {
+  height: 44px;
+  border-radius: 10px;
+  bottom: 20;
+  background-color: #ec4261;
+  color: #ffffff;
+  width: 100%;
+}

@@ -1,0 +1,106 @@
+.con_tabbar {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1000;
+}
+
+.row_tabbar {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.con_item_tabbar {
+  background-color: white;
+  color: #212121;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.con_item_tabbar_active {
+  background-color: rgba(242, 45, 87, 0.08);
+  color: #f0224f;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+.p_12_20 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p_0_20 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p_0_20_20_20 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p_14_20_20_20 {
+  padding-top: 14px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.p_27_24 {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.row_center {
+  display: flex;
+  align-items: center;
+}
+
+.row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.money_summary_text_money {
+  font-size: 14px;
+  color: #29313f;
+  font-weight: 600;
+}
+
+.money_summary_text_title_item {
+  font-size: 12px;
+  color: #576071;
+  font-weight: 400;
+}
+
+.money_summary_item_padding_bottom {
+  padding-bottom: 12px;
+}
+
+.total_text_money {
+  font-size: 16px;
+  color: #ec4261;
+  font-weight: 700;
+}
