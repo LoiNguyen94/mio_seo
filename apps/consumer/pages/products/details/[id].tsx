@@ -1,11 +1,23 @@
-import {
-  getProductDetail,
-  getListProduct,
-  isWeb,
-} from '@nxseo/function-shares';
+import { getProductDetail } from '@nxseo/function-shares';
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import Detail from './IonDetail';
 import { GetServerSideProps } from 'next';
+
+const DetailProduct = () => {
+  return (
+    <>
+      <Head>
+        <title>{'data?.name'}</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content={'data?.name'} key="title" />
+        <meta property="og:description" content={'data?.log_time'} />
+        <meta property="og:image" content={'data?.photo'} />
+      </Head>
+      <Detail />
+    </>
+  );
+};
 export default dynamic(() => Promise.resolve(Detail), { ssr: true });
 
 // export const getStaticPaths = async () => {

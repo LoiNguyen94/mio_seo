@@ -1,6 +1,5 @@
 import { withIonicPage } from '@nxseo/ui-shares';
 import { getProductDetail } from '@nxseo/function-shares';
-import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import DetailComponent from './DetailComponent';
 interface DetailProps {
@@ -27,13 +26,6 @@ const DetailContainer = (props: DetailProps) => {
   if (!data) return null;
   return (
     <>
-      <Head>
-        <title>{'data?.name'}</title>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <meta property="og:title" content={'data?.name'} key="title" />
-        <meta property="og:description" content={'data?.log_time'} />
-        <meta property="og:image" content={'data?.photo'} />
-      </Head>
       <DetailComponent detail={data} />
     </>
   );
