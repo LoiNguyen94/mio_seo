@@ -13,7 +13,7 @@ import addNewAddress from './location/add';
 import fillAddress from './location/add/fill';
 import editLocation from './location/edit/index';
 import DetailProduct from './products/details/IonDetail';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const token = useAppSelector((state) => state.auth.token);
@@ -73,10 +73,17 @@ const AppShell = () => {
   );
 };
 const App = () => {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  });
+  return !loading ? (
     <IonApp>
       <AppShell />
     </IonApp>
-  );
+  ) : null;
 };
 export default App;

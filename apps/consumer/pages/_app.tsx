@@ -44,9 +44,9 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-    
       <main className="app">
         <AnyComponent {...pageProps} />
+
         <ToastContainer
           hideProgressBar
           theme="colored"

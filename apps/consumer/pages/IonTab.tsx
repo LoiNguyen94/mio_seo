@@ -14,13 +14,30 @@ import IonHome from './home/IonHome';
 import DetailProduct from './products/details/IonDetail';
 import location from './location';
 import { useAppSelector } from '@nxseo/function-shares';
+import { useEffect, useState } from 'react';
 
-const Order = () => <IonPage><div>tab đơn hàng</div></IonPage>
-const Account = () => <IonPage><div>tab tài khoản</div></IonPage>
+const Order = () => (
+  <IonPage>
+    <div>tab đơn hàng</div>
+  </IonPage>
+);
+const Account = () => (
+  <IonPage>
+    <div>tab tài khoản</div>
+  </IonPage>
+);
 const Tabs = () => {
   const token = useAppSelector((state) => state.auth.token);
   const isAuth = token !== undefined;
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  });
+  
+  return !loading ? (
     <IonTabs>
       <IonRouterOutlet mode="ios">
         <Route path="/tabs/home" component={IonHome} exact={true} />
@@ -62,7 +79,7 @@ const Tabs = () => {
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
-  );
+  ):null;
 };
 
 export default Tabs;
