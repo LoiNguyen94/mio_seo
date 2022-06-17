@@ -1,10 +1,12 @@
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import './styles.scss';
 import {
   wrapper,
   setDefaultToken,
   fetchListAddressConfig,
   saveUserInfo,
+  isWeb,
 } from '@nxseo/function-shares';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
@@ -12,7 +14,6 @@ import { ToastContainer } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import { Storage } from '@capacitor/storage';
 import { Loading, TabBottom } from '@nxseo/ui-shares';
-import Head from 'next/head';
 
 function App({ Component, pageProps }: AppProps) {
   const AnyComponent = Component;
@@ -43,8 +44,16 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+    
       <main className="app">
-        <Component {...pageProps} />
+        <AnyComponent {...pageProps} />
+        <ToastContainer
+          hideProgressBar
+          theme="colored"
+          position="top-center"
+          autoClose={3000}
+          closeOnClick
+        />
       </main>
     </>
   );
