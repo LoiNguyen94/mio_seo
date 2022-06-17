@@ -10,6 +10,8 @@ import {
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { ICategory, IProduct } from '@nxseo/model';
+import Head from 'next/head';
+
 interface HomeIndex {}
 
 function HomeIndex(props: HomeIndex) {
@@ -46,6 +48,13 @@ function HomeIndex(props: HomeIndex) {
 
   return (
     <>
+     <Head>
+        <title>{'Home'}</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content={'data?.name'} key="title" />
+        <meta property="og:description" content={'data?.log_time'} />
+        <meta property="og:image" content={'data?.photo'} />
+      </Head>
       <HomeConsumer
         data={product}
         position={positionTab}
@@ -69,7 +78,7 @@ function HomeIndex(props: HomeIndex) {
 //   };
 // }
 
-// export default HomeIndex;
-export default dynamic(() => Promise.resolve(withIonicPage(HomeIndex)), {
-  ssr: false,
-});
+export default HomeIndex;
+// export default dynamic(() => Promise.resolve(withIonicPage(HomeIndex)), {
+//   ssr: false,
+// });

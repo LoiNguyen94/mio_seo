@@ -9,15 +9,15 @@ const nextConfig = {
     path: '',
     domains: ['cdn.itaphoa.com', 'mio-app-dev.s3.ap-southeast-1.amazonaws.com'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/home',
-        permanent: false,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/',
+  //       destination: '/home',
+  //       permanent: false,
+  //     },
+  //   ];
+  // },
   // compiler: {
   //   removeConsole: true,
   // },

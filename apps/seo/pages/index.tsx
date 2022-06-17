@@ -1,4 +1,5 @@
 import styles from './index.module.scss';
+import Head from 'next/head';
 
 export function Index() {
   /*
@@ -8,6 +9,13 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
+       <Head>
+        <title>{'data?.name'}</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta property="og:title" content={'data?.name'} key="title" />
+        <meta property="og:description" content={'data?.log_time'} />
+        <meta property="og:image" content={'data?.photo'} />
+      </Head>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
