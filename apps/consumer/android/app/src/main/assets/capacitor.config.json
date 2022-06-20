@@ -1,0 +1,6 @@
+{
+	"appId": "com.itaphoa.consumer",
+	"appName": "Mio",
+	"webDir": "../../dist/apps/consumer/exported",
+	"bundledWebRuntime": false
+}
