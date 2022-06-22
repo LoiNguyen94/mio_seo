@@ -66,6 +66,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/mio.png"></link>
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#4285f4"/>
         <link
           href="/mio.png"
           sizes="2048x2732"
