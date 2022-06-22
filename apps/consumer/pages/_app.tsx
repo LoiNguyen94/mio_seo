@@ -62,6 +62,9 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
       <main className="app">
         <AnyComponent {...pageProps} />
 
