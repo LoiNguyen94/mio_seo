@@ -27,6 +27,10 @@ const nextConfig = {
   //   removeConsole: true,
   // },
   nx: {
+    pwa: {
+      dest: 'public',
+      swSrc: 'service-worker.js',
+    },
     // Set this to true if you would like to to use SVGR
     // See: https://github.com/gregberge/svgr
     svgr: false,
@@ -63,4 +67,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPWA(withNx(nextConfig));
+module.exports = withNx(withPWA(nextConfig));
