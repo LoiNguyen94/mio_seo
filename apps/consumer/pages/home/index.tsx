@@ -6,6 +6,7 @@ import {
   getProfileApi,
   handleResponse,
   listCategoryApi,
+  useAddToHomescreenPrompt
 } from '@nxseo/function-shares';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
@@ -16,6 +17,7 @@ interface HomeIndex {}
 
 function HomeIndex(props: HomeIndex) {
   const {} = props;
+  const [prompt, promptToInstall] = useAddToHomescreenPrompt();
   const [category, setCategory] = useState<ICategory[]>([]);
   const [product, setProduct] = useState<IProduct[]>([]);
   const positionTab = useSelector((state) => state['TabPositionSlice']);
@@ -60,6 +62,7 @@ function HomeIndex(props: HomeIndex) {
         position={positionTab}
         list_category={category}
       />
+      <button onClick={promptToInstall}>Add to homescreen</button>
       <TabBottom />
     </>
   );

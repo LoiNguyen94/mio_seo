@@ -21,6 +21,7 @@ export * from './lib/hooks/useNetwork';
 export * from './lib/hooks/useNotification';
 export * from './lib/hooks/useCountDown';
 export * from './lib/hooks/useInterval';
+export * from './lib/hooks/useAddToHomescreenPrompt';
 
 export * from './lib/extra/loader';
 export * from './lib/extra/fetchDataConfig';
