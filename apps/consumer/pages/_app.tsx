@@ -64,6 +64,43 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/mio.png"></link>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link
+          href="/mio.png"
+          sizes="2048x2732"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/mio.png"
+          sizes="1668x2224"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/mio.png"
+          sizes="1536x2048"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/mio.png"
+          sizes="1125x2436"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/apple_splash_1242.png"
+          sizes="1242x2208"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/mio.png"
+          sizes="750x1334"
+          rel="apple-touch-startup-image"
+        />
+        <link
+          href="/mio.png"
+          sizes="640x1136"
+          rel="apple-touch-startup-image"
+        />
       </Head>
       <main className="app">
         <AnyComponent {...pageProps} />
