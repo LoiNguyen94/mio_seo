@@ -6,7 +6,7 @@ const withPWA = require('next-pwa');
  **/
 const nextConfig = {
   pwa: {
-    dest: 'public',
+    dest: '/',
     swSrc: 'service-worker.js',
   },
   images: {

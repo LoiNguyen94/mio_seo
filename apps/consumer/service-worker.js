@@ -19,7 +19,7 @@ precacheAndRoute(WB_MANIFEST);
 
 cleanupOutdatedCaches();
 registerRoute(
-  '/',
+  '/home',
   new NetworkFirst({
     cacheName: 'start-url',
     plugins: [
