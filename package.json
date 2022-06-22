@@ -8,7 +8,8 @@
     "test": "nx test",
     "consumer:serve": "env-cmd -f .env.local npx nx run consumer:serve --skip-nx-cache",
     "consumer:dev": "env-cmd -f .env.local npx nx run consumer:serve",
-    "consumer:export": "env-cmd -f .env.local npx nx run consumer:export"
+    "consumer:export": "env-cmd -f .env.local npx nx run consumer:export",
+    "consumer:build": "env-cmd -f .env.local npx nx run consumer:build"
   },
   "private": true,
   "dependencies": {
